@@ -1,9 +1,9 @@
 {
-  "name": "angular2-seed-advanced",
+  "name": "mp",
   "version": "0.0.0",
   "description": "Advanced seed for Angular 2 apps",
   "repository": {
-    "url": "https://github.com/NathanWalker/angular2-seed-advanced"
+    "url": "https://github.com/jovermier/mp"
   },
   "scripts": {
     "build.desktop.mac": "rimraf desktop/mac/* && gulp desktop.mac",
@@ -54,7 +54,8 @@
   "author": "Minko Gechev <mgechev>",
   "contributors": [
     {
-      "name": "Nathan Walker <NathanWalker>"
+      "name": "Nathan Walker <NathanWalker>",
+      "name": "Jason Overmier <jovermier>"
     }
   ],
   "license": "MIT",
