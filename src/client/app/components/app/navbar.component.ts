@@ -17,8 +17,34 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
+        label: 'Browse',
+        icon: 'fa-home'
+      },
+      {
+        label: 'Sell Your Stuff',
+        icon: 'fa-camera'
+      },
+      {
+        label: 'Chat',
+        icon: 'fa-weixin'
+      },
+      {
+        label: 'Categories',
+        icon: 'fa-th-large',
+        items: [
+          {label: 'Electronics', icon: 'fa-mobile', routerLink: ['/']},
+          {label: 'Cars and Motors', icon: 'fa-car', routerLink: ['/about']},
+          {label: 'Sports, Leisure and Games', icon: 'fa-bicycle', routerLink: ['/about']},
+          {label: 'Home and Garden', icon: 'fa-leaf', routerLink: ['/about']},
+          {label: 'Movies, Books and Music', icon: 'fa-book', routerLink: ['/about']},
+          {label: 'Fashion and Accessories', icon: 'fa-umbrella', routerLink: ['/about']},
+          {label: 'Baby and Child', icon: 'fa-child', routerLink: ['/about']},
+          {label: 'Other', icon: 'fa-gift', routerLink: ['/about']}
+        ]
+      },
+      {
         label: 'My Profile',
-        icon: 'fa-file-o',
+        icon: 'fa-user',
         items: [{
           label: 'New',
           icon: 'fa-plus',
@@ -32,12 +58,8 @@ export class NavbarComponent implements OnInit {
         ]
       },
       {
-        label: 'Categories',
-        icon: 'fa-edit',
-        items: [
-          {label: 'HOME', icon: 'fa-mail-forward', routerLink: ['/']},
-          {label: 'ABOUT', icon: 'fa-mail-reply', routerLink: ['/about']}
-        ]
+        label: 'Invite Facebook Friends',
+        icon: 'fa-user-plus'
       },
       {
         label: 'Help',
@@ -61,27 +83,6 @@ export class NavbarComponent implements OnInit {
               {
                 label: 'File'
               }
-            ]
-          }
-        ]
-      },
-      {
-        label: 'Actions',
-        icon: 'fa-gear',
-        items: [
-          {
-            label: 'Edit',
-            icon: 'fa-refresh',
-            items: [
-              {label: 'Save', icon: 'fa-save'},
-              {label: 'Update', icon: 'fa-save'},
-            ]
-          },
-          {
-            label: 'Other',
-            icon: 'fa-phone',
-            items: [
-              {label: 'Delete', icon: 'fa-minus'}
             ]
           }
         ]

@@ -1,3 +1,16 @@
-<more></more>
-<h1>Site Title</h1>
-<lang-switcher></lang-switcher>
+<div class="parent">
+  <button pButton type="menu" icon="fa-bars"></button>
+  <h1>Site Title</h1>
+  <span class="search">
+    <input id="in" type="text" size="30" pInputText [(ngModel)]="newName" name="newName"/>
+    <button pButton type="submit" icon="fa-search" (click)="addName()"></button>
+    <button pButton type="filter" icon="fa-filter"></button>
+    <button pButton type="language" icon="fa-language" (click)="showDialog()"></button>
+  </span>
+</div>
+<p-dialog header="Change Language" [(visible)]="display" [resizable]="false">
+  <div class="langdiv">
+    <lang-switcher></lang-switcher>
+  </div>
+</p-dialog>
+
